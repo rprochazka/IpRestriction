@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeWeb", "SomeWeb\SomeWeb.csproj", "{3072DC2C-D2C2-4DAF-AAE1-E1660DDFAB3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IPRestriction", "IPRestriction", "{8B203770-E2DF-4BCC-AF9A-B2DCCA593079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpRestriction.Logger.Domain", "IpRestriction.Logger.Domain\IpRestriction.Logger.Domain.csproj", "{280D797A-36DA-4F24-8CB6-35C77EC572A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPRestriction.Logger.Data", "IPRestriction.Data\IPRestriction.Logger.Data.csproj", "{E8379115-8C61-4E1F-B0FF-136C21D00AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPRestriction.Modules", "IPRestriction.Modules\IPRestriction.Modules.csproj", "{99E06661-2BD0-4795-A266-D96FC538392D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPRestriction.Handler", "IPRestrictionHandler\IPRestriction.Handler.csproj", "{CE85ACB3-82AE-4930-90A2-63B3FFBA9523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPRestriction.DependencyResolver", "IPRestriction.DependencyResolver\IPRestriction.DependencyResolver.csproj", "{C9F889C0-B2C2-40FF-BFA6-71963796F515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3072DC2C-D2C2-4DAF-AAE1-E1660DDFAB3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3072DC2C-D2C2-4DAF-AAE1-E1660DDFAB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3072DC2C-D2C2-4DAF-AAE1-E1660DDFAB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3072DC2C-D2C2-4DAF-AAE1-E1660DDFAB3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280D797A-36DA-4F24-8CB6-35C77EC572A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280D797A-36DA-4F24-8CB6-35C77EC572A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280D797A-36DA-4F24-8CB6-35C77EC572A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280D797A-36DA-4F24-8CB6-35C77EC572A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8379115-8C61-4E1F-B0FF-136C21D00AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8379115-8C61-4E1F-B0FF-136C21D00AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8379115-8C61-4E1F-B0FF-136C21D00AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8379115-8C61-4E1F-B0FF-136C21D00AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E06661-2BD0-4795-A266-D96FC538392D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E06661-2BD0-4795-A266-D96FC538392D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E06661-2BD0-4795-A266-D96FC538392D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E06661-2BD0-4795-A266-D96FC538392D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE85ACB3-82AE-4930-90A2-63B3FFBA9523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE85ACB3-82AE-4930-90A2-63B3FFBA9523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE85ACB3-82AE-4930-90A2-63B3FFBA9523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE85ACB3-82AE-4930-90A2-63B3FFBA9523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F889C0-B2C2-40FF-BFA6-71963796F515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F889C0-B2C2-40FF-BFA6-71963796F515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F889C0-B2C2-40FF-BFA6-71963796F515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F889C0-B2C2-40FF-BFA6-71963796F515}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{280D797A-36DA-4F24-8CB6-35C77EC572A3} = {8B203770-E2DF-4BCC-AF9A-B2DCCA593079}
+		{E8379115-8C61-4E1F-B0FF-136C21D00AC1} = {8B203770-E2DF-4BCC-AF9A-B2DCCA593079}
+		{99E06661-2BD0-4795-A266-D96FC538392D} = {8B203770-E2DF-4BCC-AF9A-B2DCCA593079}
+		{CE85ACB3-82AE-4930-90A2-63B3FFBA9523} = {8B203770-E2DF-4BCC-AF9A-B2DCCA593079}
+		{C9F889C0-B2C2-40FF-BFA6-71963796F515} = {8B203770-E2DF-4BCC-AF9A-B2DCCA593079}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

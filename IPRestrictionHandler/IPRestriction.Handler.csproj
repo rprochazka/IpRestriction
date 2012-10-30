@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE85ACB3-82AE-4930-90A2-63B3FFBA9523}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPRestriction.Handler</RootNamespace>
+    <AssemblyName>IPRestriction.Handler</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ConfigurationProvider.cs" />
+    <Compile Include="Configuration\IConfigurationProvider.cs" />
+    <Compile Include="Configuration\IPRestrictionConfigurationSection.cs" />
+    <Compile Include="Configuration\IProviderSettings.cs" />
+    <Compile Include="Configuration\ProviderConfigurationElement.cs" />
+    <Compile Include="Configuration\ProviderConfigurationElementCollection.cs" />
+    <Compile Include="Configuration\ProviderSettings.cs" />
+    <Compile Include="IIpRestrictionManager.cs" />
+    <Compile Include="IpRestrictionManager.cs" />
+    <Compile Include="IpRestrictionProviderFactories\IisConfigExpiredProviderFactory.cs" />
+    <Compile Include="IpRestrictionProviderFactories\IISConfigProviderFactory.cs" />
+    <Compile Include="IpRestrictionProviderFactories\IProviderFactory.cs" />
+    <Compile Include="IpRestrictionProviderFactories\MemoryExpiredProviderFactory.cs" />
+    <Compile Include="IpRestrictionProviderFactories\MemoryStoredProviderFactory.cs" />
+    <Compile Include="IPRestrictionProviders\ExpiredIpRestrictionProvider.cs" />
+    <Compile Include="IPRestrictionProviders\IIpRestrictionProvider.cs" />
+    <Compile Include="IPRestrictionProviders\IisRestrictionProvider.cs" />
+    <Compile Include="IPRestrictionProviders\IpRestrictionProviderDecorator.cs" />
+    <Compile Include="IPRestrictionProviders\MemoryStoredIpRestrictionProvider.cs" />
+    <Compile Include="IServiceLocator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceLocator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPRestriction.Data\IPRestriction.Logger.Data.csproj">
+      <Project>{E8379115-8C61-4E1F-B0FF-136C21D00AC1}</Project>
+      <Name>IPRestriction.Logger.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IpRestriction.Logger.Domain\IpRestriction.Logger.Domain.csproj">
+      <Project>{280D797A-36DA-4F24-8CB6-35C77EC572A3}</Project>
+      <Name>IpRestriction.Logger.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
